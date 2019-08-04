@@ -1,6 +1,6 @@
-class GameOfLife(private val grid: Grid) {
-    fun nextGeneration(): Grid {
-        return grid
+class GameOfLife(private val world: World) {
+    fun nextGeneration(): World {
+        return world
     }
 
 }

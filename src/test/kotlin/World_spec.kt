@@ -10,8 +10,8 @@ class World_spec {
 
     @Test
     fun `world is not empty if a cell is added`() {
-        val world = World()
-        val cell = Cell()
+        val world = World(1, 1)
+        val cell = 0
 
         world.add(cell)
 

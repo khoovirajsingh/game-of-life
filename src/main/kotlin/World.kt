@@ -1,12 +1,16 @@
-class World {
-    private var cell: Cell? = null
+class World(private val row: Int = 0, private val column: Int = 0) {
+    private val grid: Array<IntArray>
 
-    fun isEmpty(): Boolean {
-        return cell == null
+    init {
+         grid = Array(row, {IntArray(column)})
     }
 
-    fun add(cell: Cell) {
-        this.cell = cell
+    fun isEmpty(): Boolean {
+        return grid.isEmpty()
+    }
+
+    fun add(cell: Int) {
+        grid[0][0] = 0
     }
 
 }

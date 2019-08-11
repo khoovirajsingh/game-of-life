@@ -45,7 +45,7 @@ jobs:
 
       - run: gradle jacocoTestReport
 
-      - run: gradle sonarqube -Dsonar.projectKey=khoovirajsingh_snap-game -Dsonar.organization=khoovirajsingh -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONARQUBE_TOKEN
+      - run: gradle sonarqube -Dsonar.projectKey=khoovirajsingh_game-of-life -Dsonar.organization=khoovirajsingh -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONARQUBE_TOKEN
 
       - codecov/upload:
               file:

@@ -40,7 +40,6 @@ jacocoTestReport {
 
 sonarqube {
     properties {
-        property "sonar.coverage.jacoco.xmlReportPaths", "${buildDir}/reports/jacoco/test/"
         property "sonar.java.coveragePlugin", "jacoco"
         property "sonar.junit.reportsPath", "${buildDir}/test-results/test/"
     }
